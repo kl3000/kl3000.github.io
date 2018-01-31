@@ -548,6 +548,7 @@
 		border-color: black;
 		border-collapse: collapse;
 		text-align: center;
+		background-color: #CCFFFF;
 	}
 	#table th
 	{
@@ -566,6 +567,24 @@
 		border-color: black;
 		text-align: left;
 		padding: 1em 1.5em;
+		color: black;
+		width: 85%;
+	}
+	#table a:link, #table a:visited
+	{
+		color: mediumpurple;
+		text-decoration: none;
+	}
+	#table a:hover
+	{
+		text-decoration: underline;
+		background-color: aqua;
+	}
+	#table a:active
+	{
+		text-decoration: underline;
+		color: saddlebrown;
+		background-color: aqua;
 	}
 /*********************************************************************************/
 /* Featured                                                                      */
