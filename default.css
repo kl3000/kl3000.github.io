@@ -378,7 +378,7 @@
 	
 	.title h1
 	{
-		text-transform: lowercase;
+		text-transform: none;
 		font-size: 3em;
 	}
 	
@@ -548,7 +548,7 @@
 		border-color: black;
 		border-collapse: collapse;
 		text-align: center;
-		background-color: #CCFFFF;
+		background-color: palegreen;
 	}
 	#table th
 	{
@@ -569,6 +569,7 @@
 		padding: 1em 1.5em;
 		color: black;
 		width: 85%;
+		font-weight: bold;
 	}
 	#table a:link, #table a:visited
 	{
