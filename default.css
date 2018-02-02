@@ -525,6 +525,7 @@
 		background: #FFF;
 		border-top: 6px solid #2980b9;
 		text-align: center;
+		position: static;
 	}
 
 /*********************************************************************************/
@@ -560,7 +561,7 @@
 		border-color: black;
 		border-collapse: collapse;
 		text-align: center;
-		background-color: palegreen;
+		background-color: #abed9f;
 	}
 	#table th
 	{
@@ -634,12 +635,12 @@
 }
 .box-login .section{
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 90%;
+    width: 70%;
     height: 90%;
     background: #fff;
     z-index: 10;
