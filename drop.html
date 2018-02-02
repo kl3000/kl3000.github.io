@@ -4,6 +4,61 @@
 <title>kl3000's Kancolle and pages</title>
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" type="text/javascript">
+</script>
+<script>
+	$(document).ready(function (){
+	$('.js-open-box').on('click',function(){
+    $('.box-login').fadeIn(200);
+});
+
+//如果需要点击 overlay 关闭弹窗的话，注意阻止事件冒泡
+$('.box-login .section').on('click',function(e){
+    e.stopPropagation();
+});
+$('.overlay').on('click',function(){
+    $('.overlay').fadeOut(200,function(){
+        $(this).removeAttr('style');
+    });
+});
+})
+</script>
+<script language="JavaScript">{
+	var dro = {
+		171 : "img/1-171 Bismarck.png",
+		239 : "img/2-239Warspite.png",
+		240 : "img/1-240 Iowa.png"
+	}
+	var descr = {
+		171 : "14/03/14：大型艦建造で実装。<br />限定グラ：なし",
+		239 : "16/08/12：16夏e4の報酬艦。<br />限定グラ：新年(2018/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。",
+		240 : "16/05/03：16春e7の報酬艦。<br />限定グラ：新年(2017/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。"
+	}
+	var tit = {
+		171 : "Bismarck",
+		239 : "Warspite",
+		240 : "Iowa"
+	}
+	
+	function getid(obj)
+	{
+		console.log(obj);
+		var tarid = null;
+		if(obj)
+		{
+			tarid = obj.id;
+		}
+		var imgcode = dro[tarid];
+		var desccode = descr[tarid];
+		var titcode = tit[tarid];
+		var content = ""
+		content += "<img src='" + imgcode + "' />"
+		content += "<h1>" +titcode + "</h1><hr />"
+		content += "<p>" + desccode + "</p>"
+		$("#winout").html(content)
+	}
+}
+</script>
 </head>
 <body>
 <div id="header">
@@ -33,6 +88,10 @@
     <ul>付いてる番号は同じな型の何番艦を表しています。でも例外もあって、説明もついています。</ul>
 	</div>
 	<hr />
+	<div class="overlay box-login">
+        <div  id="winout" class="section">
+        </div>
+    </div>
 	<div id="subtitle">
 	<p>戦艦</p>
 	</div>
@@ -40,21 +99,24 @@
 	<table>
 	<tr>
 	    <th rowspan="2">Bismarck級</th>
-		<td><a href="drop/171.html">1.Bismarck</a></td>
+		<td><a class="js-open-box" href="###" id="171" onclick="getid(this)">1.Bismarck</a></td>
 	</tr>
 	<tr>
 		<td style="color: gray;">2. Tirpitz</td>
 	</tr>
 	<tr>
 	    <th rowspan="2">Iowa級</th>
-		<td><a href="drop/240.html">1.Iowa</td>
+		<td><a class="js-open-box" href="###" id="240" onclick="getid(this)">1.Iowa</a></td>
 	</tr>
 	<tr>
 		<td style="color: gray;">2. New Jersey　3.Missouri　4.Wisconsin</td>
 	</tr>
 	<tr>
-	    <th>Queen Elizabeth級</th>
-		<td>2.Warspite</td>
+	    <th rowspan="2">Queen Elizabeth級</th>
+		<td><a class="js-open-box" href="###" id="239" onclick="getid(this)">2.Warspite</a></td>
+	</tr>
+	<tr>
+		<td style="color: gray;">1.Q.Elizabeth　3.Barham　4.Valiant　5.Malaya</td>
 	</tr>
 	<tr>
 	    <th>Richelieu級</th>
