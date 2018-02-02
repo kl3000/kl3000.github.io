@@ -27,35 +27,54 @@ $('.overlay').on('click',function(){
 	var dro = {
 		171 : "img/1-171 Bismarck.png",
 		239 : "img/2-239Warspite.png",
-		240 : "img/1-240 Iowa.png"
+		240 : "img/1-240 Iowa.png",
+		241 : "img/2-241 Littorio.png",
+		242 : "img/4-242 Roma.png"
 	}
 	var descr = {
 		171 : "14/03/14：大型艦建造で実装。<br />限定グラ：なし",
 		239 : "16/08/12：16夏e4の報酬艦。<br />限定グラ：新年(2018/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。",
-		240 : "16/05/03：16春e7の報酬艦。<br />限定グラ：新年(2017/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。"
+		240 : "16/05/03：16春e7の報酬艦。<br />限定グラ：新年(2017/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。",
+		241 : "15/04/28：15春e4の報酬艦。<br />限定グラ：クリスマス(2015/12/08)，水着(2016/07/20)",
+		242 : "15/04/28: 15春e6のドロップ艦。<br / >限定グラ：ハロウィン(2015/10/30)，親子丼(2016/10/05・実装する間に手に入ることはできませんので、ドロップ画像もありません。"
 	}
 	var tit = {
 		171 : "Bismarck",
 		239 : "Warspite",
-		240 : "Iowa"
+		240 : "Iowa",
+		241 : "Littorio",
+		242 : "Roma"
+	}
+	var limdro = {
+		241 : ["img/2-241 Littorio-1.png","img/2-241 Littorio-2.png"],
+		242 : ["img/4-242 Roma-1.png"]
 	}
 	
 	function getid(obj)
 	{
 		console.log(obj);
 		var tarid = null;
+		var limid = null;
 		if(obj)
 		{
 			tarid = obj.id;
+			limid = obj.id;
 		}
 		var imgcode = dro[tarid];
 		var desccode = descr[tarid];
 		var titcode = tit[tarid];
+		var limimgcode = limdro[limid];
 		var content = ""
-		content += "<img src='" + imgcode + "' />"
-		content += "<h1>" +titcode + "</h1><hr />"
-		content += "<p>" + desccode + "</p>"
-		$("#winout").html(content)
+		content += "<img src='" + imgcode + "' />";
+		content += "<h1>" + titcode + "</h1><hr />";
+		content += "<p>" + desccode + "</p>";
+		if(limdro[limid] != null)
+		{
+			for (var x = 0; x<limdro[limid].length;x++) {
+				content += "<img src='" + limdro[limid][x] + "'><br />";
+			}
+		}
+		$("#winout").html(content);
 	}
 }
 </script>
@@ -123,8 +142,11 @@ $('.overlay').on('click',function(){
 		<td>1.Richelieu</td>
 	</tr>
 	<tr>
-	    <th>V.Veneto級</th>
-		<td>2.Littorio　4.Roma</td>
+	    <th rowspan="2">V.Veneto級</th>
+		<td><a class="js-open-box" href="###" id="241" onclick="getid(this)">2.Littorio</a>　<a class="js-open-box" href="###" id="242" onclick="getid(this)">4.Roma</a></td>
+	</tr>
+	<tr>
+		<td style="color: gray;">1.Vittorio Veneto　3.Impero<a href="###" title="3番艦になるか4番艦になるかに争いがあって、ここはゲーム内の図鑑に準ずる。"><sup>*</sup></a> </td>
 	</tr>
 	<tr>
 	    <th>Гангут級</th>
