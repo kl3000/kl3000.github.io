@@ -34,70 +34,115 @@ $('.overlay').on('click',function(){
 		2 : "img/battleship/2-002陸奥むつ.png",
 		3 : "img/battleship/1-003伊勢いせ.png",
 		4 : "img/battleship/2-004日向ひゅうが.png",
+		6 : "img/aircarrier/1-006赤城あかぎ.png",
+		7 : "img/aircarrier/1-007加賀かが.png",
+		8 : "img/aircarrier/1-008蒼龍そうりゅう.png",
+		9 : "img/aircarrier/1-009飛龍ひりゅう.png",
 		21 : "img/battleship/1-021金剛こんごう.png",
 		22 : "img/battleship/2-022比叡ひえい.png",
 		23 : "img/battleship/3-023榛名はるな.png",
 		24 : "img/battleship/4-024霧島きりしま.png",
 		26 : "img/battleship/1-026扶桑ふそう.png",
 		27 : "img/battleship/2-027山城やましろ.png",
+		106 : "img/aircarrier/1-106翔鶴しょうかく.png",
+		107 : "img/aircarrier/2-107瑞鶴ずいかく.png",
 		131 : "img/battleship/1-131大和やまと.png",
 		143 : "img/battleship/2-143武蔵むさし.png",
+		153 : "img/aircarrier/1-153大鳳たいほう.png",
 		171 : "img/battleship/1-171 Bismarck.png",
+		201 : "img/aircarrier/1-201雲龍うんりゅう.png",
+		202 : "img/aircarrier/2-202天城あまぎ.png",
+		203 : "img/aircarrier/3-203葛城かつらぎ.png",
+		232 : "img/aircarrier/1-232Graf Zeppelin.png",
+		233 : "img/aircarrier/2-233 Saratoga.png",
 		239 : "img/battleship/2-239Warspite.png",
 		240 : "img/battleship/1-240 Iowa.png",
 		241 : "img/battleship/2-241 Littorio.png",
 		242 : "img/battleship/4-242 Roma.png",
+		244 : "img/aircarrier/1-244 Aquila.png",
 		292 : "img/battleship/1-292 Richelieu.png",
-		311 : "img/battleship/1-311Гангут.png"
+		311 : "img/battleship/1-311Гангут.png",
+		315 : "img/aircarrier/1-315 Ark Royal.png"
 	}
 	var descr = {
 		1 : "初期実装する。<br />限定グラ：なし",
 		2 : "初期実装する。<br />限定グラ：秋の浴衣(16/09/16)",
 		3 : "初期実装する。<br />限定グラ：なし",
 		4 : "初期実装する。<br />限定グラ：なし",
+		6 : "初期実装する。<br />限定グラ：親子丼(16/10/05)",
+		7 : "初期実装する。<br />限定グラ：なし",
+		8 : "初期実装する。<br />限定グラ：秋の私服(17/10/18)",
+		9 : "初期実装する。<br />限定グラ：なし",
 		21 : "初期実装する。<br />限定グラ：秋の買い物(16/10/21)",
 		22 : "初期実装する。<br />限定グラ：なし",
 		23 : "初期実装する。<br />限定グラ：三越(17/03/17)[榛名改二: 水着(16/08/01)]",
 		24 : "初期実装する。<br />限定グラ：なし",
 		26 : "初期実装する。<br />限定グラ：新年(16/01/01)，夏(16/07/15),梅雨(17/06/06),秋刀魚(16/10/21),瑞雲祭り(17/07/31)",
 		27 : "初期実装する。<br />限定グラ：新年(16/01/01)，夏(16/07/15),秋の買い物(16/06/21),瑞雲祭り(17/07/31)",
+		106 : "13/05/17：13春e3の報酬艦。<br />限定グラ：クリスマス(17/12/11)",
+		107 : "13/05/17：13春e4のドロップ艦。<br />限定グラ：なし",
 		131 : "13/08/01：13夏e4の報酬艦。<br />限定グラ：水着(16/08/01),新年(18/01/01)",
 		143 : "13/11/01: 13秋e5の報酬艦。<br />限定グラ：なし",
+		153 : "13/12/24：大型艦建造で実装。<br />限定グラ：なし",
 		171 : "14/03/14：大型艦建造で実装。<br />限定グラ：なし",
+		201 : "14/08/08：14夏e5の報酬艦。<br />限定グラ：なし",
+		202 : "15/02/06：15冬e5の報酬艦。<br />限定グラ：新年(16/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。),親子丼(16/10/05、実装する間に手に入ることはできませんので、ドロップ画像もありません。)",
+		203 : "15/04/28：15春e2の報酬艦。<br />限定グラ：なし",
+		232 : "15/11/18：15秋e4のドロップ艦。<br />限定グラ：なし",
+		233 : "16/11/19：16秋e5の報酬艦。<br />限定グラ：なし",
 		239 : "16/08/12：16夏e4の報酬艦。<br />限定グラ：新年(18/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。",
 		240 : "16/05/03：16春e7の報酬艦。<br />限定グラ：新年(17/01/01、実装する間に手に入ることはできませんので、ドロップ画像もありません。",
 		241 : "15/04/28：15春e4の報酬艦。<br />限定グラ：クリスマス(15/12/08)，水着(16/07/20)",
 		242 : "15/04/28: 15春e6のドロップ艦。<br / >限定グラ：ハロウィン(15/10/30)，親子丼(16/10/05・実装する間に手に入ることはできませんので、ドロップ画像もありません。",
+		244 : "16/08/12：16夏e3，e4のドロップ艦。<br />限定グラ：なし",
 		292 : "17/08/10：17夏e4の報酬艦。<br />限定グラ：私服(17/09/29，実装する間に手に入ることはできませんので、ドロップ画像もありません。)，2018新年(18/01/01，実装する間に手に入ることはできませんので、ドロップ画像もありません。)",
-		311 : "17/05/02：17春e5の報酬艦。<br />限定グラ：なし"
+		311 : "17/05/02：17春e5の報酬艦。<br />限定グラ：なし",
+		315 : "17/08/12: 17夏e7の報酬艦。<br />限定グラ：なし"
 	}
 	var tit = {
 		1 : "長門",
 		2 : "陸奥",
 		3 : "伊勢",
 		4 : "日向",
+		6 : "赤城",
+		7 : "加賀",
+		8 : "蒼龍",
+		9 : "飛龍",
 		21 : "金剛",
 		22 : "比叡",
 		23 : "榛名",
 		24 : "霧島",
 		26 : "扶桑",
 		27 : "山城",
+		106 : "翔鶴",
+		107 : "瑞鶴",
 		131 : "大和",
 		143 : "武蔵",
+		153 : "大鳳",
 		171 : "Bismarck",
+		201 : "雲龍",
+		202 : "天城",
+		203 : "葛城",
+		232 : "Graf Zeppelin",
+		233 : "Saratoga",
 		239 : "Warspite",
 		240 : "Iowa",
 		241 : "Littorio",
 		242 : "Roma",
+		244 : "Aquila",
 		292 : "Richelieu",
-		311 : "Гангут"
+		311 : "Гангут",
+		315 : "Ark Royal"
 	}
 	var limdro = {
 		2 : ["img/battleship/2-002陸奥むつ-1.png"],
+		6 : ["img/aircarrier/1-006赤城あかぎ-1.png"],
+		8 : ["img/aircarrier/1-008蒼龍そうりゅう-1.png"],
 		21 : ["img/battleship/1-021金剛こんごう-1.png"],
 		23 : ["img/battleship/3-023榛名はるな-1.png"],
 		26 : ["img/battleship/1-026扶桑ふそう-1.png","img/battleship/1-026扶桑ふそう-2.png","img/battleship/1-026扶桑ふそう-3.png","img/battleship/1-026扶桑ふそう-4.png","img/battleship/1-026扶桑ふそう-5.png"],
 		27 : ["img/battleship/2-027山城やましろ-1.png","img/battleship/2-027山城やましろ-2.png","img/battleship/2-027山城やましろ-3.png","img/battleship/2-027山城やましろ-4.png"],
+		106 : ["img/aircarrier/1-106翔鶴しょうかく-1.png"],
 		131 : ["img/battleship/1-131大和やまと-1.png","img/battleship/1-131大和やまと-2.png"],
 		241 : ["img/battleship/2-241 Littorio-1.png","img/battleship/2-241 Littorio-2.png"],
 		242 : ["img/battleship/4-242 Roma-1.png"],
@@ -244,19 +289,21 @@ $('.overlay').on('click',function(){
 	<div id="table">
 	<table>
 	<tr>
-	    <th>Lexington級</th>
-		<td>2.Saratoga</td>
+	    <th rowspan="2">Lexington級</th>
+		<td><a class="js-open-box" href="###" id="233" onclick="getid(this)">2.Saratoga</a></td>
 	</tr>
 	<tr>
+		<td style="color: gray;">1.Lexington</td>
+	<tr>
 	    <th>翔鶴型</th>
-		<td>1.翔鶴　2.瑞鶴</td>
+		<td><a class="js-open-box" href="###" id="106" onclick="getid(this)">1.翔鶴</a>　<a class="js-open-box" href="###" id="107" onclick="getid(this)">2.瑞鶴</a></td>
 	<tr>
 	    <th>雲龍型</th>
-		<td>1.雲龍　2.天城　3.葛城</td>
+		<td><a class="js-open-box" href="###" id="201" onclick="getid(this)">1.雲龍</a>　<a class="js-open-box" href="###" id="202" onclick="getid(this)">2.天城</a>　<a class="js-open-box" href="###" id="203" onclick="getid(this)">3.葛城</a></td>
 	</tr>
 	<tr>
 	    <th>単造空母</th>
-		<td>1.赤城　2.加賀　3.蒼龍　4.飛龍　5.大鳳　6.Graf Zeppelin　<br />7.Aquila　8.Ark Royal</td>
+		<td><a class="js-open-box" href="###" id="6" onclick="getid(this)">1.赤城</a>　<a class="js-open-box" href="###" id="7" onclick="getid(this)">2.加賀</a>　<a class="js-open-box" href="###" id="8" onclick="getid(this)">3.蒼龍</a>　<a class="js-open-box" href="###" id="9" onclick="getid(this)">4.飛龍</a>　<a class="js-open-box" href="###" id="153" onclick="getid(this)">5.大鳳</a>　<a class="js-open-box" href="###" id="232" onclick="getid(this)">6.Graf Zeppelin</a>　<br /><a class="js-open-box" href="###" id="244" onclick="getid(this)">7.Aquila</a>　<a class="js-open-box" href="###" id="315" onclick="getid(this)">8.Ark Royal</a></td>
 	</tr>
 	</div>
 	</table>
