@@ -477,9 +477,10 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		color: rgba(255,255,255,0.5);
+		position: relative;
 	}
 	
-	#menu li:hover a, #menu li.active a, #menu li.active span
+	#menu li:hover a, #menu li:active a, #menu li.active span
 	{
 		background: rgba(255,0,0,0.3);
 	}
@@ -490,8 +491,19 @@
 		color: rgba(255,0,0,0.3);
 	}
 	
-	#menu .icon
+	#menu ul li ul li
 	{
+		display: none;
+		padding: 1em 1em;
+		text-align: center;
+		text-decoration:  none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: rgba(255,255,255,0.5);
+		float: none;
+		position: absolute;
+		left: 205px;
+		top : 0;
 	}
 
 /*********************************************************************************/
