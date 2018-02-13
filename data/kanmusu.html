@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" type="text/javascript">
-</script>
-<script>
-	function getkan(obj){
-		}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript">
 </script>
 <link href="../default.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+	table 
+	{
+	  border-collapse: collapse;
+	}
+	tr 
+	{
+	  width: 80%;
+	}
+	th
+	{
+	  width: 10%;
+	  padding-bottom: 1.5em;
+	  padding-top: 1.5em;
+	  padding-left: 1em;
+	  padding-right: 1em;
+	}
+	a
+	{
+		color: #000000;
+		text-decoration: none;
+	}
+</style>
 </head>
 
 <body>
@@ -26,386 +45,287 @@
 	</div>
 </div>
 <div id="main">
- <div id="list">
-	<div id="subtitle">
-	<p>戦艦</p>
+	<div class="title">
+		艦娘逆引き
 	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th rowspan="2">Bismarck級</th>
-		<td><a class="js-open-box" href="###" id="171" onclick="getid(this)">1.Bismarck</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">2. Tirpitz</td>
-	</tr>
-	<tr>
-	    <th rowspan="2">Iowa級</th>
-		<td><a class="js-open-box" href="###" id="240" onclick="getid(this)">1.Iowa</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">2. New Jersey　3.Missouri　4.Wisconsin</td>
-	</tr>
-	<tr>
-	    <th rowspan="2">Queen Elizabeth級</th>
-		<td><a class="js-open-box" href="###" id="239" onclick="getid(this)">2.Warspite</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">1.Q.Elizabeth　3.Barham　4.Valiant　5.Malaya</td>
-	</tr>
-	<tr>
-	    <th rowspan="2">Richelieu級</th>
-		<td><a class="js-open-box" href="###" id="292" onclick="getid(this)">1.Richelieu</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">2.Jean Bart　3.Clemenceau　4.Gascony<a href="###" title="ドイツの侵入により建造できなかった"><sup>*</sup></a></td>
-	</tr>
-	<tr>
-	    <th rowspan="2">V.Veneto級</th>
-		<td><a class="js-open-box" href="###" id="241" onclick="getid(this)">2.Littorio</a>　<a class="js-open-box" href="###" id="242" onclick="getid(this)">4.Roma</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">1.Vittorio Veneto　3.Impero<a href="###" title="3番艦になるか4番艦になるかに争いがあって、ここはゲーム内の図鑑に準ずる。"><sup>*</sup></a> </td>
-	</tr>
-	<tr>
-	    <th rowspan="2">Гангут級</th>
-		<td><a class="js-open-box" href="###" id="311" onclick="getid(this)">1.Гангут</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">2.Петропавловск　3.Севастополь　4.Полтава</td>
-	</tr>
-	<tr>
-	    <th>長門型</th>
-		<td><a class="js-open-box" href="###" id="1" onclick="getid(this)">1.長門</a>　<a class="js-open-box" href="###" id="2" onclick="getid(this)">2.陸奥</a></td>
-	</tr>
-	<tr>
-	    <th>大和型</th>
-		<td><a class="js-open-box" href="###" id="131" onclick="getid(this)">1.大和</a>　<a class="js-open-box" href="###" id="143" onclick="getid(this)">2.武蔵</a></td>
-	</tr>
-	<tr>
-	    <th>扶桑型</th>
-		<td><a class="js-open-box" href="###" id="26" onclick="getid(this)">1.扶桑</a>　<a class="js-open-box" href="###" id="27" onclick="getid(this)">2.山城</a></td>
-	</tr>
-	<tr>
-	    <th>金剛型</th>
-		<td><a class="js-open-box" href="###" id="21" onclick="getid(this)">1.金剛</a>　<a class="js-open-box" href="###" id="22" onclick="getid(this)">2.比叡</a>　<a class="js-open-box" href="###" id="23" onclick="getid(this)">3.榛名</a>　<a class="js-open-box" href="###" id="24" onclick="getid(this)">4.霧島</a></td>
-	</tr>
-	<tr>
-	    <th>伊勢型</th>
-		<td><a class="js-open-box" href="###" id="3" onclick="getid(this)">1.伊勢</a>　<a class="js-open-box" href="###" id="4" onclick="getid(this)">2.日向</a></td>
-	</tr>
-	</div>
-	</table>
 	<hr />
-	<div id="subtitle">
-	<p>正規空母&装甲空母</p>
-	</div>
-		<div id="desc">
-		<p>このタイプの単造空母での艦娘の番号は何番艦に対応しません。</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th rowspan="2">Lexington級</th>
-		<td><a class="js-open-box" href="###" id="233" onclick="getid(this)">2.Saratoga</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">1.Lexington</td>
-	<tr>
-	    <th>翔鶴型</th>
-		<td><a class="js-open-box" href="###" id="106" onclick="getid(this)">1.翔鶴</a>　<a class="js-open-box" href="###" id="107" onclick="getid(this)">2.瑞鶴</a></td>
-	<tr>
-	    <th>雲龍型</th>
-		<td><a class="js-open-box" href="###" id="201" onclick="getid(this)">1.雲龍</a>　<a class="js-open-box" href="###" id="202" onclick="getid(this)">2.天城</a>　<a class="js-open-box" href="###" id="203" onclick="getid(this)">3.葛城</a></td>
-	</tr>
-	<tr>
-	    <th>単造空母</th>
-		<td><a class="js-open-box" href="###" id="6" onclick="getid(this)">1.赤城</a>　<a class="js-open-box" href="###" id="7" onclick="getid(this)">2.加賀</a>　<a class="js-open-box" href="###" id="8" onclick="getid(this)">3.蒼龍</a>　<a class="js-open-box" href="###" id="9" onclick="getid(this)">4.飛龍</a>　<a class="js-open-box" href="###" id="153" onclick="getid(this)">5.大鳳</a>　<a class="js-open-box" href="###" id="232" onclick="getid(this)">6.Graf Zeppelin</a>　<br /><a class="js-open-box" href="###" id="244" onclick="getid(this)">7.Aquila</a>　<a class="js-open-box" href="###" id="315" onclick="getid(this)">8.Ark Royal</a></td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<!-- 表格模板 结束-->
-	<div id="subtitle">
-	<p>重巡洋艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th rowspan="2">Admiral Hipper級</th>
-		<td ><a class="js-open-box" href="###" id="176" onclick="getid(this)">3.Prinz Eugen</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">1.Admiral Hipper　2.Blücher　4.Seydlitz　5.Lützow</td>
-	</tr>
-	<tr>
-	    <th rowspan="2">Zara級</th>
-		<td><a class="js-open-box" href="###" id="248" onclick="getid(this)">1.Zara</a>　<a class="js-open-box" href="###" id="249" onclick="getid(this)">3.Pola</a></td>
-	</tr>
-	<tr>
-		<td style="color: gray;">2.Fiume　4.Gorizia</td>
-	</tr>
-	<tr>
-	    <th>高雄型</th>
-		<td><a class="js-open-box" href="###" id="59" onclick="getid(this)">1.高雄</a>　<a class="js-open-box" href="###" id="60" onclick="getid(this)">2.愛宕</a>　<a class="js-open-box" href="###" id="61" onclick="getid(this)">3.摩耶</a>　<a class="js-open-box" href="###" id="62" onclick="getid(this)">4.鳥海</a></td>
-	</tr>
-	<tr>
-	    <th>古鷹型</th>
-		<td><a class="js-open-box" href="###" id="52" onclick="getid(this)">1.古鷹</a>　<a class="js-open-box" href="###" id="53" onclick="getid(this)">2.加古</a></td>
-	</tr>
-	<tr>
-	    <th>利根型</th>
-		<td><a class="js-open-box" href="###" id="63" onclick="getid(this)">1.利根</a>　<a class="js-open-box" href="###" id="64" onclick="getid(this)">2.筑摩</a></td>
-	</tr>
-	<tr>
-	    <th>妙高型</th>
-		<td><a class="js-open-box" href="###" id="55" onclick="getid(this)">1.妙高</a>　<a class="js-open-box" href="###" id="56" onclick="getid(this)">2.那智</a>　<a class="js-open-box" href="###" id="57" onclick="getid(this)">3.足柄</a>　<a class="js-open-box" href="###" id="58" onclick="getid(this)">4.羽黒</a></td>
-	</tr>
-	<tr>
-	    <th>青葉型</th>
-		<td><a class="js-open-box" href="###" id="54" onclick="getid(this)">1.青葉</a>　<a class="js-open-box" href="###" id="120" onclick="getid(this)">2.衣笠</a></td>
-	</tr>
-	<tr>
-	    <th>最上型</th>
-		<td><a class="js-open-box" href="###" id="101" onclick="getid(this)">1.最上</a>　<a class="js-open-box" href="###" id="116" onclick="getid(this)">2.三隈</a>　<a class="js-open-box" href="###" id="124" onclick="getid(this)">3.鈴谷</a>　<a class="js-open-box" href="###" id="125" onclick="getid(this)">4.熊野</a></td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>軽空母</p>
-	</div>
 	<div id="desc">
-		<p>このタイプの単造空母での艦娘の番号は何番艦に対応しません。</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>飛鷹型</th>
-		<td>1.飛鷹　2.隼鷹</td>
-	</tr>
-	<tr>
-	    <th>祥鳳型</th>
-		<td>1.祥鳳　2.瑞鳳</td>
-	<tr>
-		<th>単造空母</th>	
-		<td>1.鳳翔　2.龍驤　3.春日丸</td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<!-- 表格模板 开始-->
-	<div id="subtitle">
-	<p>軽巡洋艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>阿賀野型</th>
-		<td>1.阿賀野　2.能代　3.矢矧　4.酒匂</td>
-	</tr>
-	<tr>
-	    <th>長良型</th>
-		<td>1.長良　2.五十鈴　3.名取　4.由良　5.鬼怒　6.阿武隈</td>
-	<tr>
-	    <th>川内型</th>
-		<td>1.川内　2.神通　3.那珂</td>
-	</tr>
-	<tr>
-	    <th>大淀型</th>
-		<td>1.大淀</td>
-	</tr>
-	<tr>
-	    <th>球磨型</th>
-		<td>1.球磨　2.多摩　3.北上　4.大井　5.木曽</td>
-	</tr>
-	<tr>
-	    <th>天龍型</th>
-		<td>1.天龍　2.龍田</td>
-	</tr>
-	<tr>
-	    <th>夕張型</th>
-		<td>1.夕張</td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>練習巡洋艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>香取型</th>
-		<td>1.香取　2.鹿島</td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>駆逐艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>1934級</th>
-		<td>1.Z1　3.Z3</td>
-	</tr>
-	<tr>
-	    <th>Maestrale級</th>
-		<td>3.Libeccio</td>
-	</tr>
-	<tr>
-	    <th>白露型</th>
-		<td>1.白露　2.時雨　3.村雨　4.夕立　5.春雨　6.五月雨　<br />7.海風　8.山風　9.江風　10.涼風</td>
-	</tr>
-	<tr>
-	    <th>朝潮型</th>
-		<td>1.朝潮　2.大潮　3.満潮　4.荒潮　5.朝雲　6.山雲　<br />9.霰　10.霞</td>
-	</tr>
-	<tr>
-	    <th>初春型</th>
-		<td>1.初春　2.子日　3.若葉　4.初霜</td>
-	</tr>
-	<tr>
-	    <th>吹雪型</th>
-		<td>1.吹雪　2.白雪　3.初雪　4.深雪　5.叢雲　9.磯波　10.浦波</td>
-	</tr>
-	<tr>
-	    <th>島風型</th>
-		<td>1.島風</td>
-	</tr>
-	<tr>
-	    <th>綾波型</th>
-		<td>1.綾波　2.敷波　5.天霧　6.狭霧　7.朧　8.曙　<br />9.漣　10.潮</td>
-	</tr>
-	<tr>
-	    <th>睦月型</th>
-		<td>1.睦月　2.如月　3.弥生　4.卯月　5.皐月　6.水無月　<br />7.文月　8.長月　9.菊月　10.三日月　12.望月</td>
-	</tr>
-	<tr>
-	    <th>秋月型</th>
-		<td>1.秋月　2.照月　3.涼月　4.初月</td>
-	</tr>
-	<tr>
-	    <th>神風型</th>
-		<td>1.神風　2.朝風　3.春風　4.松風　5.旗風</td>
-	</tr>
-	<tr>
-	    <th>夕雲型</th>
-		<td>1.夕雲　2.巻雲　3.風雲　4.長波　6.高波　11.藤波　<br />14.沖波　16.朝霜　17.早霜　19.清霜</td>
-	</tr>
-	<tr>
-	    <th>陽炎型</th>
-		<td>1.陽炎　2.不知火　3.黒潮　4.親潮　7.初風　8.雪風　<br />9.天津風　10.時津風　11.浦風　12.磯風　13.浜風　14.谷風　<br />15.野分　16.嵐　17.萩風　18.舞風　19.秋雲</td>
-	</tr>
-	<tr>
-	    <th>暁型</th>
-		<td>1.暁　2.響　3.雷　4.電</td>
-	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>補給艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>改風早型</th>
-		<td>1.速吸</td>
-	</tr>
-	<tr>
-	    <th>神威型</th>
-		<td>1.神威</td>
-	</tr>
-	</table>
+		下のデーブルから逆引きすることも可能です。そしてデッキも構築することが可能です。
 	</div>
 	<hr />
-	<div id="subtitle">
-	<p>工作艦</p>
-	</div>
-	<div id="table">
-	<table>
+<table border="1">
 	<tr>
-	    <th>明石型</th>
-		<td>1.明石</td>
-	</tr>
-	</table>
-	</div>
-	<hr />
-	<div id="subtitle">
-	<p>海防艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>占守型</th>
-		<td>1.占守　2.国後</td>
+		<th>一番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck1">クリックで選択する</a></td>
 	</tr>
 	<tr>
-	    <th>択捉型</th>
-		<td>1.択捉　2.松輪　3.佐渡　7.対馬</td>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>潜水艦&潜水母艦</p>
-	</div>
-	<div id="desc">
-		<p>このタイプの艦娘の番号は何番艦に対応しません。</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>潜水艦</th>
-		<td>1.伊19 　2.伊168 　3.伊58 　4.伊8 　5.伊401 　6.まるゆ 　<br />7.U-511 　8.伊26 　9.伊400 　10.伊13 　11.伊14  12.Luigi Torelli</td>
+		<th>二番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck2">クリックで選択する</a></td>
 	</tr>
 	<tr>
-	    <th>潜水母艦</th>
-		<td>1.大鯨</td>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>水上機母艦</p>
-	</div>
-	<div id="table">
-	<table>
-	<tr>
-	    <th>C.Teste級</th>
-		<td>1.Commandant Teste</td>
+		<th>三番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck3">クリックで選択する</td>
 	</tr>
 	<tr>
-	    <th>千歳型</th>
-		<td>1.千歳　2.千代田</td>
-	<tr>
-	    <th>秋津洲型</th>
-		<td>1.秋津洲</td>
+		<th>四番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck4">クリックで選択する</td>
 	</tr>
 	<tr>
-	    <th>瑞穂型</th>
-		<td>1.瑞穂</td>
+		<th>五番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck5">クリックで選択する</td>
 	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
-	<p>揚陸艦</p>
-	</div>
-	<div id="table">
-	<table>
 	<tr>
-	    <th>あきつ丸型</th>
-		<td>1.あきつ丸</td>
+		<th>六番艦</th>
+		<td colspan="5"><a href="###" onclick="getkan(this)" id="deck6">クリックで選択する</td>
 	</tr>
-	</div>
-	</table>
-	<hr />
-	<div id="subtitle">
+</table>
+<hr />
+<div id="seanam">
+<input type="text" id="sear"/>
+<button>111</button>
+<div id="result">
 
 </div>
 </div>
 </div>
+<script type="text/javascript">
+	    var checkedid = "";
+		var tit = {
+		1 : "長門",
+		2 : "陸奥",
+		3 : "伊勢",
+		4 : "日向",
+		5 : "雪風",
+		6 : "赤城",
+		7 : "加賀",
+		8 : "蒼龍",
+		9 : "飛龍",
+		10 : "島風",
+		11 : "吹雪",
+		12 : "白雪",
+		13 : "初雪",
+		14 : "深雪",
+		15 : "叢雲",
+		16 : "磯波",
+		17 : "綾波",
+		18 : "敷波",
+		19 : "大井",
+		20 : "北上",
+		21 : "金剛",
+		22 : "比叡",
+		23 : "榛名",
+		24 : "霧島",
+		25 : "鳳翔",
+		26 : "扶桑",
+		27 : "山城",
+		28 : "天龍",
+		29 : "龍田",
+		30 : "龍驤",
+		31 : "睦月",
+		32 : "如月",
+		33 : "皐月",
+		34 : "文月",
+		35 : "長月",
+		36 : "菊月",
+		37 : "三日月",
+		38 : "望月",
+		39 : "球磨",
+		40 : "多摩",
+		41 : "木曽",
+		42 : "長良",
+		43 : "五十鈴",
+		44 : "名取",
+		45 : "由良",
+		46 : "川内",
+		47 : "神通",
+		48 : "那珂",
+		49 : "千歳",
+		50 : "千代田",
+		52 : "古鷹",
+		53 : "加古",
+		54 : "青葉",
+		55 : "妙高",
+		56 : "那智",
+		57 : "足柄",
+		58 : "羽黒",
+		59 : "高雄",
+		60 : "愛宕",
+		61 : "摩耶",
+		62 : "鳥海",
+		63 : "利根",
+		64 : "筑摩",
+		65 : "飛鷹",
+		66 : "隼鷹",
+		67 : "朧",
+		68 : "曙",
+		69 : "漣",
+		70 : "潮",
+		71 : "暁",
+		72 : "響",
+		73 : "雷",
+		74 : "電",
+		75 : "初春",
+		76 : "子日",
+		77 : "若葉",
+		78 : "初霜",
+		79 : "白露",
+		80 : "時雨",
+		81 : "村雨",
+		82 : "夕立",
+		83 : "五月雨",
+		84 : "涼風",
+		85 : "朝潮",
+		86 : "大潮",
+		87 : "満潮",
+		88 : "荒潮",
+		89 : "霰",
+		90 : "霞",
+		91 : "陽炎",
+		92 : "不知火",
+		93 : "黒潮",
+		94 : "祥鳳",
+		101 : "最上",
+		106 : "翔鶴",
+		107 : "瑞鶴",
+		109 : "鬼怒",
+		110 : "阿武隈",
+		111 : "夕張",
+		112 : "瑞鳳",
+		116 : "三隈",
+		118 : "初風",
+		119 : "舞風",
+		120 : "衣笠",
+		123 : "伊19",
+		124 : "鈴谷",
+		125 : "熊野",
+		126 : "伊168",
+		127 : "伊58",
+		128 : "伊8",
+		131 : "大和",
+		132 : "秋雲",
+		133 : "夕雲",
+		134 : "巻雲",
+		135 : "長波",
+		137 : "阿賀野",
+		138 : "能代",
+		139 : "矢矧",
+		140 : "酒匂",
+		143 : "武蔵",
+		153 : "大鳳",
+		154 : "香取",
+		155 : "伊401",
+		161 : "あきつ丸",
+		162 : "神威",
+		163 : "まるゆ",
+		164 : "弥生",
+		165 : "卯月",
+		167 : "磯風",
+		168 : "浦風",
+		169 : "谷風",
+		170 : "浜風",
+		171 : "Bismarck",
+		174 : "Z1",
+		175 : "Z3",
+		176 : "Prinz Eugen",
+		181 : "天津風",
+		182 : "明石",
+		183 : "大淀",
+		184 : "大鯨",
+		186 : "時津風",
+		201 : "雲龍",
+		202 : "天城",
+		203 : "葛城",
+		205 : "春雨",
+		209 : "早霜",
+		210 : "清霜",
+		213 : "朝雲",
+		214 : "山雲",
+		215 : "野分",
+		221 : "秋月",
+		222 : "照月",
+		223 : "初月",
+		224 : "高波",
+		225 : "朝霜",
+		231 : "U-511",
+		232 : "Graf Zeppelin",
+		233 : "Saratoga",
+		239 : "Warspite",
+		240 : "Iowa",
+		241 : "Littorio",
+		242 : "Roma",
+		243 : "Libeccio",
+		244 : "Aquila",
+		245 : "秋津洲",
+		248 : "Zara",
+		249 : "Pola",
+		251 : "瑞穂",
+		252 : "沖波",
+		253 : "風雲",
+		254 : "嵐",
+		255 : "萩風",
+		256 : "親潮",
+		257 : "山風",
+		258 : "海風",
+		259 : "江風",
+		260 : "速吸",
+		265 : "鹿島",
+		271 : "神風",
+		272 : "朝風",
+		273 : "春風",
+		274 : "松風",
+		275 : "旗風",
+		279 : "天霧",
+		280 : "狭霧",
+		281 : "水無月",
+		283 : "伊26",
+		285 : "藤波",
+		286 : "浦波",
+		291 : "Commandant Teste",
+		292 : "Richelieu",
+		293 : "伊400",
+		294 : "伊13",
+		295 : "伊14",
+		311 : "Гангут",
+		315 : "Ark Royal",
+		317 : "占守",
+		318 : "国後",
+		321 : "春日丸",
+		325 : "Luigi Torelli",
+		332 : "涼月",
+		334 : "択捉",
+		335 : "松輪",
+		339 : "佐渡",
+		340 : "対馬"
+	}
+	function getkan(obj)
+	{
+		var selkan = "";
+		checkedid = obj.id;
+		document.getElementById("result").style.display = "";
+		$(document).ready(function()
+		{
+			var i = null;
+			for (var x in tit) {
+				selkan += "<a href = '###' id ="+ x +" onclick = 'chan(this)'>";
+				selkan += tit[x] + "</a>";
+				selkan += "，";
+				i++;
+				if(i % 6 == 0)
+				{
+					selkan += "<br /><hr />";
+				}
+			}
+
+			$("#result").html(selkan);
+		});
+	}
+		function chan(obj)
+	    {
+		    var seledid = obj.id;
+		    var seled = tit[seledid];
+		    document.getElementById(""+ checkedid +"").innerHTML="" + seled +"";
+		    document.getElementById("result").style.display = "none";
+	    }
+</script>
 </body>
 </html>
