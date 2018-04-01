@@ -144,10 +144,17 @@ $('.overlay').on('click',function(){
 	<table>
 	<tr>
 	    <th rowspan="2">Essex級</th>
-		<td><a class="js-open-box" href="###" id="349" onclick="getid(this)">5.Intripid</a></td>
+		<td><a class="js-open-box" href="###" id="349" onclick="getid(this)">5.Intripid(CV-11)</a><sup><a href="###" title="同じ名前を付く艦があるため、番号は付きます。また、ゲームの中は就役の順で並んでいました。実は番号によれば3番艦です。">*</a></sup></td>
 	</tr>
 	<tr>
-		<td style="color: gray;">同じ型艦が多いため、折り畳みます。</td>
+		<td style="color: gray;"><a href="###"onclick="	
+		if(document.getElementById('essexkyu').style.display!='none'){
+		document.getElementById('essexkyu').style.display='none';
+	}else{
+		document.getElementById('essexkyu').style.display='block';
+	}">同じ型艦の数は24のため、折り畳みます。クリックすれば展開が可能です。既に展開してる場合には、再びクリックすると折り畳みます。</a>
+		<div id="essexkyu" style="display: none;">1.Essex(CV-9) 2.Lexington(CV-16) 3.Yorktown(CV-10) 4.Bunker Hill(CV-17) 6.Wasp(CV-18) 7.Hornet(CV-12)  8.Franklin(CV-13) 9.Hancock(CV-19) 10.Ticonderoga(CV-14) 11.Bennington(CV-20) 12.Shangri-la(CV-38) 13.Randolph(CV-15) 14.Bon Homme Richard(CV-31) 15.Antietam(CV-36) 16.Boxer(CV-21) 17.Lake Champlain(CV-39) 18.Princeton(CV-37) 19.Tawara(CV-40) <br />20.Keasarge(CV-33) 21.Leyte(CV-32) 22.Philipinne Sea(CV-47) 23.Oriskani(CV-34) <br />24.Valley Forge(CV-45)</div>
+		</td>
 	</tr>
 	<tr>
 	    <th rowspan="2">Lexington級</th>
@@ -238,7 +245,14 @@ $('.overlay').on('click',function(){
 		<td><a class="js-open-box" href="###" id="344" onclick="getid(this)">19.Gambier Bay</a></td>
 	</tr>
 	<tr>
-		<td style="color: gray;">同じ型艦が多いため、折り畳みます。</td>
+		<td style="color: gray;"><a href="###"onclick="	
+		if(document.getElementById('caskyu').style.display!='none'){
+		document.getElementById('caskyu').style.display='none';
+	}else{
+		document.getElementById('caskyu').style.display='block';
+	}">同じ型艦の数は50のため、折り畳みます。クリックすれば展開が可能です。既に展開してる場合には、再びクリックすると折り畳みます。</a>
+	<div id="caskyu" style="display: none;">1.Casablanca 2.Liscome Bay 3.Coral Sea/Anzio 4.Corregidor 5.Mission Bay 6.Guadalcanal 7.Manila Bay 8.Natoma Bay 9.Midway/St. Lo 10.Tripoli 11.Wake Island 12.White Plains 13.Solomons 14.Kalinin Bay 15.Kasaan Bay 16.Fanshaw Bay 17.Kitkun Bay 18.Tulagi 20.Nehenta Bay 21.Hoggatt Bay 22.Kadasahan Bay 23.Marcus Island 24.Savo Island 25.Ommaney Bay 26.Petrof Bay 27.Rudyerd Bay 28.Saginaw Bay 29.Sargent Bay 30.Shamrock Bay 31.Shipley Bay 32.Sitkoh Bay 33.Steamer Bay 34.Cape Esperance 35.Takanis Bay 36.Thetis Bay 37.Makassar Strait 38.Windham Bay 39.Makin Island 40.Lunga Poin 41.Bismarck Sea 42.Salamaua 43.Hollandia 44.Kwajalein 45.Admiralty Islands 46.Bougainville 47.Matanikau 48.Attu 49.Roi 50.Munda</div>
+	</td>
 	</tr>
 		<th>単造空母</th>	
 		<td><a class="js-open-box" href="###" id="25" onclick="getid(this)">1.鳳翔</a>　<a class="js-open-box" href="###" id="30" onclick="getid(this)">2.龍驤</a>　<a class="js-open-box" href="###" id="321" onclick="getid(this)">3.春日丸</a></td>
@@ -308,7 +322,7 @@ $('.overlay').on('click',function(){
 		<td><a class="js-open-box" href="###" id="319" onclick="getid(this)">1.Jervis</a></td>
 	</tr>
 	<tr>
-		<td style="color: gray;">2.Z2(Georg Thiele)　4.Z4(Richard Beitzen)</td>
+		<td style="color: gray;">2.Jackal 3.Juguar　4.Juno 5.Janus 6.Javelin 7.Jersey 8.Jupiter</td>
 	</tr>
 	<tr>
 	    <th rowspan="2">1934級</th>
